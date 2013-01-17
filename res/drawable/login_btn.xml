@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+     <selector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+         >
+         <item android:state_enabled="false"> <!-- disabled -->
+	         <layer-list>
+		        <item android:drawable="@drawable/login_normal"/>
+		        <item>
+		            <color android:color="#88FFFFFF" />
+		        </item>
+		    </layer-list>
+         </item>
+         
+     	<item android:state_enabled="true"	android:state_pressed="true" 	android:drawable="@drawable/login_on_click" /> <!-- pressed -->
+     	<item android:state_enabled="true"	android:state_focused="true"	android:drawable="@drawable/login_on_mouse_over" /> <!-- focused -->
+     	<item android:state_enabled="true"	android:drawable="@drawable/login_normal" /> <!-- default -->
+ 	</selector>

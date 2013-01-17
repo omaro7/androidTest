@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.androidtest"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.androidtest.LauncherActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".TwoScroll01" android:screenOrientation="portrait"/>
+        <activity android:name=".TwoScroll02" android:screenOrientation="portrait"/>
+        <activity android:name=".ScrollableImageActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".TableActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Scrolltest01" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.androidtest.twowaygrid.TwowaygridActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ImageTest01" android:screenOrientation="portrait"/>
+        <activity android:name=".ImageTest02" android:screenOrientation="portrait"/>
+        <activity android:name=".SurefaceViewTest01" android:screenOrientation="portrait"/>
+        <activity android:name=".MomoryActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".TermsTest01" android:screenOrientation="portrait"/>
+        <activity android:name=".UUIDMakeActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".VoiceRecognitionActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".AndroidButtonStateActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.habibm.customactivitytransition.CustomActivityTransitionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.habibm.customactivitytransition.SecondActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.habibm.customactivitytransition.ThirdActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".SpeakingAndroid" android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>
